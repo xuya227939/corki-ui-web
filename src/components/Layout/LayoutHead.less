@@ -1,0 +1,95 @@
+.header {
+    display: flex;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    // padding: 0 58px;
+    height: 64px;
+    white-space: nowrap;
+    background: #fff;
+    box-shadow: 0 8px 24px -2px rgba(0, 0, 0, .05);
+
+    .header-nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    
+        .header-nav-row {
+            height: 63px;
+            width: 100%;
+            padding-left: 40px;
+            padding-right: 40px;
+    
+            .header-nav-col-left {
+                height: 63px;
+                line-height: 63px;
+                font-size: 16px;
+                display: flex;
+    
+                .col-text {
+                    height: 63px;
+                    line-height: 63px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    color: #080e29;
+                    text-decoration: none;
+                    font-size: 24px;
+                }
+    
+                .header-nav-logo {
+                    background-image: url(//sight-world.oss-cn-hangzhou.aliyuncs.com/images/favicon.png);
+                    height: 63px;
+                    width: 63px;
+                    background-size: 100%;
+                    background-position-x: -12px;
+                    background-position-y: center;
+                    cursor: pointer;
+                }
+            }
+    
+            .header-nav-col-right {
+                height: 63px;
+                line-height: 63px;
+                font-size: 16px;
+                display: flex;
+                justify-content: flex-end;
+    
+                .col-abount {
+                    cursor: pointer;
+                }
+
+                .right-span {
+                    cursor: pointer;
+                    min-width: 72px;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}
+
+// @media (max-width: 1200px) {
+//     .header {
+//         padding: 0 24px;
+//     }
+// }
+
+// @media (max-width: 992px) {
+//     .header {
+//         padding: 0 24px;
+//     }
+// }
+
+// @media (max-width: 768px) {
+//     .header {
+//         padding: 0 24px;
+//     }
+    
+//     .col-abount {
+//         padding-right: 15px;
+//     }
+// }
