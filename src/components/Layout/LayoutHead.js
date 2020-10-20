@@ -17,7 +17,7 @@ class LayoutHead extends PureComponent {
 
         if(key == 'about') this.props.history.push('/components/about');
 
-        if(key == 'github') window.open('https://github.com/Cherry-Team/corki-ui');
+        if(key == 'github') window.open('https://github.com/xuya227939/corki-ui');
     }
 
     render() {

@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-no-target-blank */
-/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 import './LayoutFooter.less';
 
