@@ -27,7 +27,7 @@
     "classnames": "^2.2.6",
     "clean-webpack-plugin": "^3.0.0",
     "core-js": "^2.6.9",
-    "corki-ui": "^1.9.19",
+    "corki-ui": "^1.9.20",
     "cross-env": "^6.0.3",
     "cross-fetch": "^3.0.4",
     "css-loader": "^3.2.0",

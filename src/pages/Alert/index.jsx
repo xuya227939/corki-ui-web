@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-// import { Alert } from 'corki-ui';
-import classNames from 'classNames';
+import { Alert } from 'corki-ui';
 import BasicComponents from '../../components/BasicComponents/index';
 import README from './README.md';
-import './index.less';
 
 class Index extends Component {
     constructor(props) {
@@ -12,27 +10,14 @@ class Index extends Component {
     }
 
     render() {
-        const { history, className, message = '123', description = '456', type = 'success', style } = this.props;
-
-        const alertClass = classNames(className, {
-            'corki-alert': true,
-            'corki-alert-no-icon': true,
-            'corki-alert-success': type === 'success',
-            'corki-alert-info': type === 'info',
-            'corki-alert-warning': type === 'warning',
-            'corki-alert-error': type === 'error'
-        });
+        const { history } = this.props;
 
         return (
             <BasicComponents history={history} README={README}>
-                <div
-                    styleName={alertClass}
-                    style={{ ...style }}
-                    role="alert"
-                >
-                    <span styleName="corki-alert-message">{message}</span>
-                    <span styleName="corki-alert-description">{description}</span>
-                </div>
+                <Alert message="Success Text" type="success" style={{ marginBottom: '16px' }} />
+                <Alert message="Info Text" type="info" style={{ marginBottom: '16px' }} />
+                <Alert message="Warning Text" type="warning" style={{ marginBottom: '16px' }} />
+                <Alert message="Error Text" type="error" style={{ marginBottom: '16px' }} />
             </BasicComponents>
         );
     }

@@ -9,6 +9,12 @@ const getCard = Mock.mock(location.origin + '/api/card.json', 'get', {
             'isSubMenu': 1
         },
         {
+            'title': 'Alert',
+            'small': '警告提示',
+            'href': '/components/alert',
+            'isSubMenu': 1
+        },
+        {
             'title': 'Button',
             'small': '按钮',
             'href': '/components/button',
@@ -310,6 +316,20 @@ const getBasicComponents = Mock.mock(RegExp(location.origin + '/api/basicCompone
             dataColumns: '[{"title":"属性","dataIndex":"attribute","key":"attribute"},{"title":"说明","dataIndex":"explain","key":"explain"},{"title":"类型","dataIndex":"type","key":"type"},{"title":"默认值","dataIndex":"default","key":"default"}]'
         },
         {
+            title: 'Alert',
+            subTitle: '警告提示',
+            subDescribe: '警告提示，展现需要关注的信息。',
+            whenUse: '何时使用',
+            assemblyDescribe: '当某个页面需要向用户显示警告的信息时。',
+            codeDemo: '代码演示',
+            codeBoxTitle: '基本',
+            codeBoxDescription: '最简单的用法，适用于简短的警告提示。',
+            api: 'API',
+            apiDescription: 'Alert',
+            dataSource: '[{"key":"1","attribute":"message","explain":"警告提示内容","type":"ReactNode","default":""}, {"key":"2","attribute":"type","explain":"指定警告提示的样式，有四种选择 `success`、`info`、`warning`、`error`","type":"string","default":"success"}, {"key":"3","attribute":"description","explain":"自定义内容","type":"ReactNode","default":""}]',
+            dataColumns: '[{"title":"属性","dataIndex":"attribute","key":"attribute"},{"title":"说明","dataIndex":"explain","key":"explain"},{"title":"类型","dataIndex":"type","key":"type"},{"title":"默认值","dataIndex":"default","key":"default"}]'
+        },
+        {
             title: 'Empty',
             subTitle: '空状态',
             subDescribe: '空状态时的展示占位图。',
@@ -417,6 +437,11 @@ const getChangeLog = Mock.mock(location.origin + '/api/changeLog.json', 'get', {
             title: '1.9.19',
             date: '2020-10-14',
             update: '["新增Tooltip组件"]'
+        },
+        {
+            title: '1.9.20',
+            date: '2020-10-20',
+            update: '["新增Alert组件"]'
         }
     ]
 });
