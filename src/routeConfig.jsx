@@ -1,5 +1,5 @@
 // 路由配置文件
-import React, { lazy } from 'react';
+import React from 'react';
 import { Route } from 'react-router-dom';
 import Modal from './pages/Modal';
 import VerificationCode from './pages/VerificationCode';
@@ -21,8 +21,13 @@ import ChangeLog from './pages/ChangeLog';
 import Slider from './pages/Slider';
 import Tag from './pages/Tag';
 import Tooltip from './pages/Tooltip';
+import Alert from './pages/Alert';
 
 const routes = [
+    {
+        path: '/components/alert',
+        component: Alert
+    },
     {
         path: '/components/tag',
         component: Tag
@@ -41,39 +46,39 @@ const routes = [
     },
     {
         path: '/components/about',
-        component: About,
+        component: About
     },
     {
         path: '/components/modal',
-        component: Modal,
+        component: Modal
     },
     {
         path: '/components/verificationCode',
-        component: VerificationCode,
+        component: VerificationCode
     },
     {
         path: '/components/button',
-        component: Button,
+        component: Button
     },
     {
         path: '/components/input',
-        component: Input,
+        component: Input
     },
     {
         path: '/components/progress',
-        component: Progress,
+        component: Progress
     },
     {
         path: '/components/tooltip',
-        component: Tooltip,
+        component: Tooltip
     },
     {
         path: '/components/preview',
-        component: Preview,
+        component: Preview
     },
     {
         path: '/components/switch',
-        component: Switch,
+        component: Switch
     },
     {
         path: '/components/radio',

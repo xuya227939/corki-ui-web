@@ -92,11 +92,11 @@ class Index extends Component {
                         <span>组件</span>
                     }
                 >
-                    {/* <Menu.Item key="/components/tooltip">
+                    <Menu.Item key="/components/alert">
                         <span>
-                            Tooltip&nbsp;&nbsp;
+                            Alert&nbsp;&nbsp;
                         </span>
-                    </Menu.Item> */}
+                    </Menu.Item>
                     {
                         home.subMenu.map(item => {
                             return (
