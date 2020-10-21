@@ -12,19 +12,19 @@ class Index extends Component {
 
     cancel = () => {
         this.setState({
-            visible: false,
+            visible: false
         });
     };
         
     confirm = () => {
         this.setState({
-            visible: false,
+            visible: false
         });
     }
 
     showModal = () => {
         this.setState({
-            visible: true,
+            visible: true
         });
     }
 

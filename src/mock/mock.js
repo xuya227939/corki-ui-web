@@ -200,7 +200,7 @@ const getBasicComponents = Mock.mock(RegExp(location.origin + '/api/basicCompone
             codeBoxDescription: '第一个对话框。',
             api: 'API',
             apiDescription: 'Modal',
-            dataSource: '[{"key":"1","attribute":"visible","explain":"Modal是否显示","type":"bool","default":"false"},{"key":"2","attribute":"title","explain":"弹窗标题","type":"string","default":"test"},{"key":"3","attribute":"cancelText","explain":"取消文案","type":"string","default":"取消"},{"key":"4","attribute":"confirmText","explain":"确认文案","type":"string","default":"确认"},{"key":"5","attribute":"cancel","explain":"取消回调","type":"func","default":"-"},{"key":"6","attribute":"confirm","explain":"确认回调","type":"func","default":"-"}]',
+            dataSource: '[{"key":"1","attribute":"visible","explain":"Modal是否显示","type":"bool","default":"false"},{"key":"2","attribute":"title","explain":"弹窗标题","type":"string","default":"test"},{"key":"3","attribute":"cancelText","explain":"取消文案","type":"string","default":"取消"},{"key":"4","attribute":"confirmText","explain":"确认文案","type":"string","default":"确认"},{"key":"5","attribute":"cancel","explain":"取消回调","type":"func","default":"-"},{"key":"6","attribute":"confirm","explain":"确认回调","type":"func","default":"-"},{"key":"7","attribute":"keyboard","explain":"是否支持键盘 esc 关闭","type":"boolean","default":"true"}]',
             dataColumns: '[{"title":"属性","dataIndex":"attribute","key":"attribute"},{"title":"说明","dataIndex":"explain","key":"explain"},{"title":"类型","dataIndex":"type","key":"type"},{"title":"默认值","dataIndex":"default","key":"default"}]'
         },
         {
