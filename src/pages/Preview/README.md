@@ -22,19 +22,16 @@ class App extends React.Component {
     }
 
     render() {
-        const { isShowPreView } = this.state;
         return (
             <div>
                 <Button type="primary" onClick={this.showPreview}>
                     Open Preview
                 </Button>
-                {
-                    isShowPreView &&
-                    <Preview
-                        url="sight-world.oss-cn-hangzhou.aliyuncs.com/corki-ui/corki-ui-logo.jpeg"
-                        onClose={this.onClose}
-                    />
-                }
+                <Preview
+                    url="sight-world.oss-cn-hangzhou.aliyuncs.com/corki-ui/corki-ui-logo.jpeg"
+                    onClose={this.onClose}
+                    visible={this.state.isShowPreView}
+                />
             </div>
         );
     }

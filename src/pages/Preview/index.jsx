@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Table } from 'antd';
 import { Button, Preview } from 'corki-ui';
 import BasicComponents from '../../components/BasicComponents/index';
 import README from './README.md';
@@ -34,13 +33,11 @@ class Index extends Component {
                 >
                     Open Preview
                 </Button>
-                {
-                    this.state.isShowPreView && 
-                    <Preview
-                        url="//sight-world.oss-cn-hangzhou.aliyuncs.com/corki-ui/corki-ui-logo.jpeg"
-                        onClose={this.onClose}
-                    />
-                }
+                <Preview
+                    url="//sight-world.oss-cn-hangzhou.aliyuncs.com/corki-ui/corki-ui-logo.jpeg"
+                    onClose={this.onClose}
+                    visible={this.state.isShowPreView}
+                />
             </BasicComponents>
         );
     }

@@ -214,7 +214,7 @@ const getBasicComponents = Mock.mock(RegExp(location.origin + '/api/basicCompone
             codeBoxDescription: '第一个预览框。',
             api: 'API',
             apiDescription: 'Preview',
-            dataSource: '[{"key":"1","attribute":"url","explain":"图片链接，必须是在网络上能够打开","type":"string","default":"-"},{"key":"2","attribute":"onClose","explain":"关闭方法","type":"func","default":"-"}]',
+            dataSource: '[{"key":"1","attribute":"url","explain":"图片链接，必须是在网络上能够打开","type":"string","default":"-"},{"key":"2","attribute":"onClose","explain":"关闭方法","type":"func","default":"-"},{"key":"3","attribute":"keyboard","explain":"是否支持键盘 esc 关闭","type":"boolean","default":"true"}]',
             dataColumns: '[{"title":"属性","dataIndex":"attribute","key":"attribute"},{"title":"说明","dataIndex":"explain","key":"explain"},{"title":"类型","dataIndex":"type","key":"type"},{"title":"默认值","dataIndex":"default","key":"default"}]'
         },
         {
