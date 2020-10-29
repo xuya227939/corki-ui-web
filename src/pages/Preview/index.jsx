@@ -12,15 +12,11 @@ class Index extends Component {
     }
 
     showPreview = () => {
-        this.setState({
-            isShowPreView: true
-        });
+        this.setState({ isShowPreView: true });
     }
 
     onClose = () => {
-        this.setState({
-            isShowPreView: false
-        });
+        this.setState({ isShowPreView: false });
     }
 
     render() {

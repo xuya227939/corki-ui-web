@@ -442,6 +442,16 @@ const getChangeLog = Mock.mock(location.origin + '/api/changeLog.json', 'get', {
             title: '1.9.20',
             date: '2020-10-20',
             update: '["新增Alert组件"]'
+        },
+        {
+            title: '1.9.21',
+            date: '2020-10-20',
+            update: '["优化Modal组件"]'
+        },
+        {
+            title: '1.9.22',
+            date: '2020-10-20',
+            update: '["优化Preview组件"]'
         }
     ]
 });

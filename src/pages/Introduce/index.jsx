@@ -53,7 +53,7 @@ class Index extends Component {
                     <ul>
                         <li>
                             <p>
-                                稳定版：<a href="https://www.npmjs.org/package/corki-ui"><img src="https://img.shields.io/badge/npm-1.9.20-blue" alt="npm package" /></a>
+                                稳定版：<a href="https://www.npmjs.org/package/corki-ui"><img src="https://img.shields.io/badge/npm-1.9.22-blue" alt="npm package" /></a>
                             </p>
                         </li>
                     </ul>
