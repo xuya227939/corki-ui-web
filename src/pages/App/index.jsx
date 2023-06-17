@@ -134,7 +134,11 @@ class Index extends Component {
               target="_blank"
             />
           </p>
-          <p>Copyright © 2019 - {new Date().getFullYear()} Cherry Team</p>
+          <p>
+            Copyright © 2019 - {new Date().getFullYear()} Cherry Team
+            <br />
+            <a href="https://beian.miit.gov.cn">备案号：湘ICP备18013456号-2</a>
+          </p>
         </footer>
       </div>
     );
